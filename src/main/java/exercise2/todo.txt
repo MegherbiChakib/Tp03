@@ -1,0 +1,15 @@
+Une classe OrderController interagit avec un OrderService pour créer une
+commande. L'OrderService enregistre les détails de la commande dans une base de
+données à l'aide d'une classe OrderDao (Dao : Data access object).
+
+
+1. Créer une classe OrderController avec une méthode createOrder(Order
+order) qui appelle OrderService.createOrder(order).
+2. Créer une classe OrderService avec une méthode createOrder(Order order)
+qui appelle OrderDao.saveOrder(order).
+3. Créer une interface OrderDao avec une méthode saveOrder(Order order).
+4. Écrire un test JUnit pour OrderController.createOrder(Order order). Utilisez
+des mocks pour OrderService et OrderDao.
+5. Dans le test, vérifiez que OrderService.createOrder est appelé avec le bon
+argument et que OrderDao.saveOrder est appelé avec l'objet de commande
+créé.
