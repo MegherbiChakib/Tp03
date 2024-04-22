@@ -26,7 +26,7 @@ public class TestExo2 {
         // un test JUnit pour OrderController.createOrder(Order order)par un  mocks pour   OrderDao.
         boolean resultat1= orderController.createOrder(order);
         verify(orderDaoMock).saveOrder(order);
-
+        System.out.println("1");
 
 
 
